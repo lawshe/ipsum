@@ -1,5 +1,5 @@
 {
-  "name": "Star Trek Ipsum",
+  "name": "star-trek-ipsum",
   "version": "0.0.1",
   "description": "Lorem ipsum generator with Star Trek terminology",
   "main": "index.js",
