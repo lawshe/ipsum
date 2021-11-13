@@ -18,6 +18,7 @@ export default function Form() {
         <label htmlFor="paragraphs">Paragraphs</label>
         <input
           type="number"
+          inputMode="numeric"
           id="paragraphs"
           min="1"
           max="100"
