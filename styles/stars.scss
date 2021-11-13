@@ -1,0 +1,38 @@
+@function makeStars($n) {
+  $value: "#{random(2000)}px #{random(2000)}px #FFF";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(2000)}px #{random(2000)}px #FFF";
+  }
+  @return unquote($value);
+}
+
+.stars {
+  background: transparent;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    background: transparent;
+  }
+}
+
+$stars1: makeStars(700);
+#stars1 {
+  width: 1px;
+  height: 1px;
+  box-shadow: $stars1;
+}
+
+$stars2: makeStars(200);
+#stars2 {
+  width: 2px;
+  height: 2px;
+  box-shadow: $stars2;
+}
+
+$stars3: makeStars(100);
+#stars3 {
+  width: 2.2px;
+  height: 2.2px;
+  box-shadow: $stars3;
+}

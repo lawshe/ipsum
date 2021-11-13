@@ -1,0 +1,28 @@
+@use 'variables';
+
+buttonBase {
+  border: none;
+  border-radius: variables.$border-radius;
+  color: variables.$white;
+  font-weight: bold;
+  padding: variables.$padding-sm;
+}
+
+buttonSmall {
+  font-size: variables.$font-small;
+  padding: variables.$padding-xs;
+}
+
+button {
+  background: variables.$blue;
+  @extend buttonBase;
+}
+
+.btn-sm {
+  @extend buttonSmall;
+}
+
+buttonPrimary {
+  @extend buttonBase;
+  background-color: variables.$red;
+}
