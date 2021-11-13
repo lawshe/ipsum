@@ -33,6 +33,12 @@ form {
   display: flex;
   justify-content: center;
 
+  input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+  }
+
   input[type="number"] {
     width: 50px;
   }
